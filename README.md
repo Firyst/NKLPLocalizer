@@ -36,6 +36,7 @@ Usage:
 3. Edit the Resources/locale.csv file:
    Each column is a language, first column is unique key.
    Each string contains localized strings of each language.
+   Warning: the last language should be "none", otherwise file might be read wrongly.
 4. If required, following functions may be called:
    NKLPLocalizer.LocalizeAllText() - reload all texts.
    NKLPLocalizer.GetString(key) - returns localized string by key.
